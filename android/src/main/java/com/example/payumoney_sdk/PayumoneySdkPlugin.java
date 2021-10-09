@@ -125,7 +125,12 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
   private void buildPaymentParams(MethodCall call) {
       PayUCheckoutProConfig payUCheckoutProConfig = new PayUCheckoutProConfig ();
       payUCheckoutProConfig.setMerchantName((String)call.argument("merchantName"));
-
+      HashMap<String, Object> additionalParams = new HashMap<>(); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF1, "udf1"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF2, "udf2"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF3, "udf3"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF4, "udf4"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF5, "udf5"); 
 
 
 
@@ -145,11 +150,7 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
             .setIsProduction((boolean)call.argument("isProduction"))
             .setKey((String)call.argument("merchantKey"))
             .setUserCredential((String)call.argument("userCredentials"))
-            .setUdf1((String)call.argument("udf1"))
-            .setUdf2((String)call.argument("udf2"))
-            .setUdf3((String)call.argument("udf3"))
-            .setUdf4((String)call.argument("udf4"))
-            .setUdf5((String)call.argument("udf5"));
+            .setAdditionalParams(additionalParams); 
 
 
 
