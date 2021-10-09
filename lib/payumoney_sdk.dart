@@ -25,13 +25,21 @@ class PayumoneySdk {
      required String email,
      required String hash,
      required String salt,
-     String successURL="https://www.payumoney.com/mobileapp/payumoney/success.php",
-     String failureURL="https://www.payumoney.com/mobileapp/payumoney/failure.php",
+     required String successURL,
+     required String failureURL,
      required String merchantKey,
      bool isProduction=false,
      String? userCredentials,
      String merchantName="Payu",
-    bool showExitConfirmation=true
+     bool showExitConfirmation=true,
+     String? udf1,
+     String? udf2,
+     String? udf3,
+     String? udf4,
+     String? udf5,
+
+
+    
    })async{
      ///Success URL="https://www.payumoney.com/mobileapp/payumoney/success.php"
      ///Falure URL="https://www.payumoney.com/mobileapp/payumoney/failure.php"
@@ -52,7 +60,12 @@ class PayumoneySdk {
        "hash":hash,
         "salt":salt,
         "merchantName":merchantName,
-        "showExitConfirmation":showExitConfirmation
+        "showExitConfirmation":showExitConfirmation,
+        "udf1":udf1,
+        "udf2":udf2,
+        "udf3":udf3,
+        "udf4":udf4,
+        "udf5":udf5,
      });
 
 
