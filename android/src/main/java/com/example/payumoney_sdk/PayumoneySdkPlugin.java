@@ -141,7 +141,7 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
         // payUCheckoutProConfig.setPaymentModesOrder(checkoutOrderList);
         ArrayList<HashMap<String,String>> enforceList = new ArrayList();
         HashMap<String,String> map = new HashMap<>();
-        map.put(PayUCheckoutProConstants.CP_PAYMENT_TYPE, PaymentType.CARD.name());
+        map.put(PayUCheckoutProConstants.CP_PAYMENT_TYPE, PaymentType.UPI.name());
         // map.put(PayUCheckoutProConstants.CP_CARD_TYPE, CardType.CC.name());
         enforceList.add(map);
         payUCheckoutProConfig.setEnforcePaymentList(enforceList);
