@@ -132,17 +132,17 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
       additionalParams.put(PayUCheckoutProConstants.CP_UDF4, "udf4"); 
       additionalParams.put(PayUCheckoutProConstants.CP_UDF5, "udf5"); 
 
-        ArrayList<PaymentMode> checkoutOrderList = new ArrayList<>();
-        checkoutOrderList.add(new PaymentMode(PaymentType.UPI));
-        checkoutOrderList.add(new PaymentMode(PaymentType.UPI, PayUCheckoutProConstants.CP_GOOGLE_PAY));
-        checkoutOrderList.add(new PaymentMode(PaymentType.WALLET, PayUCheckoutProConstants.CP_PHONEPE));
-        checkoutOrderList.add(new PaymentMode(PaymentType.WALLET, PayUCheckoutProConstants.CP_PAYTM));
-        checkoutOrderList.add(new PaymentMode(PaymentType.CARD));
-        payUCheckoutProConfig.setPaymentModesOrder(checkoutOrderList);
+        // ArrayList<PaymentMode> checkoutOrderList = new ArrayList<>();
+        // checkoutOrderList.add(new PaymentMode(PaymentType.UPI));
+        // checkoutOrderList.add(new PaymentMode(PaymentType.UPI, PayUCheckoutProConstants.CP_GOOGLE_PAY));
+        // checkoutOrderList.add(new PaymentMode(PaymentType.WALLET, PayUCheckoutProConstants.CP_PHONEPE));
+        // checkoutOrderList.add(new PaymentMode(PaymentType.WALLET, PayUCheckoutProConstants.CP_PAYTM));
+        // checkoutOrderList.add(new PaymentMode(PaymentType.CARD));
+        // payUCheckoutProConfig.setPaymentModesOrder(checkoutOrderList);
         ArrayList<HashMap<String,String>> enforceList = new ArrayList();
         HashMap<String,String> map = new HashMap<>();
         map.put(PayUCheckoutProConstants.CP_PAYMENT_TYPE, PaymentType.CARD.name());
-        map.put(PayUCheckoutProConstants.CP_CARD_TYPE, CardType.CC.name());
+        // map.put(PayUCheckoutProConstants.CP_CARD_TYPE, CardType.CC.name());
         enforceList.add(map);
         payUCheckoutProConfig.setEnforcePaymentList(enforceList);
 
