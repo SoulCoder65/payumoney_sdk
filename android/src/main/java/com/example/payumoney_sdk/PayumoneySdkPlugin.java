@@ -131,6 +131,11 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
       additionalParams.put(PayUCheckoutProConstants.CP_UDF3, "udf3"); 
       additionalParams.put(PayUCheckoutProConstants.CP_UDF4, "udf4"); 
       additionalParams.put(PayUCheckoutProConstants.CP_UDF5, "udf5"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF6, "udf6"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF7, "udf7"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF8, "udf8"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF9, "udf9"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF10, "udf10"); 
 
         // ArrayList<PaymentMode> checkoutOrderList = new ArrayList<>();
         // checkoutOrderList.add(new PaymentMode(PaymentType.UPI));

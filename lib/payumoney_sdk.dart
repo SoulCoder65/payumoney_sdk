@@ -37,6 +37,11 @@ class PayumoneySdk {
      String? udf3,
      String? udf4,
      String? udf5,
+     String? udf6,
+     String? udf7,
+     String? udf8,
+     String? udf9,
+     String? udf10,
 
 
     
@@ -66,6 +71,11 @@ class PayumoneySdk {
         "udf3":udf3,
         "udf4":udf4,
         "udf5":udf5,
+        "udf6":udf6,
+        "udf7":udf7,
+        "udf8":udf8,
+        "udf9":udf9,
+        "udf10":udf10,
      });
 
 
