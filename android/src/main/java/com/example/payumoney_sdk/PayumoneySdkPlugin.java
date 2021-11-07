@@ -126,11 +126,11 @@ public class PayumoneySdkPlugin implements FlutterPlugin, MethodCallHandler,Plug
       PayUCheckoutProConfig payUCheckoutProConfig = new PayUCheckoutProConfig ();
       payUCheckoutProConfig.setMerchantName((String)call.argument("merchantName"));
       HashMap<String, Object> additionalParams = new HashMap<>(); 
-      additionalParams.put(PayUCheckoutProConstants.CP_UDF1, "udf1"); 
-      additionalParams.put(PayUCheckoutProConstants.CP_UDF2, "udf2"); 
-      additionalParams.put(PayUCheckoutProConstants.CP_UDF3, "udf3"); 
-      additionalParams.put(PayUCheckoutProConstants.CP_UDF4, "udf4"); 
-      additionalParams.put(PayUCheckoutProConstants.CP_UDF5, "udf5"); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF1, (String)call.argument("udf1")); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF2, (String)call.argument("udf2")); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF3, (String)call.argument("udf3")); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF4, (String)call.argument("udf4")); 
+      additionalParams.put(PayUCheckoutProConstants.CP_UDF5, (String)call.argument("udf5")); 
      
         // ArrayList<PaymentMode> checkoutOrderList = new ArrayList<>();
         // checkoutOrderList.add(new PaymentMode(PaymentType.UPI));
